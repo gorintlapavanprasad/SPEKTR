@@ -673,129 +673,6 @@ footer {
 .d1{transition-delay:0.07s;} .d2{transition-delay:0.14s;}
 .d3{transition-delay:0.21s;} .d4{transition-delay:0.28s;}
 
-
-
-/* ━━━━ CONSULTATION MODAL ━━━━ */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.72);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  z-index: 2000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
-}
-.modal-overlay.open {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-card {
-  width: 100%;
-  max-width: 640px;
-  max-height: 90vh;
-  overflow-y: auto;
-  background: #090909;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 22px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.55);
-  padding: 28px;
-}
-.modal-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-.modal-title {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 1.1;
-  color: #fff;
-  margin-bottom: 8px;
-}
-.modal-sub {
-  font-size: 13px;
-  color: rgba(255,255,255,0.45);
-  line-height: 1.7;
-}
-.modal-close {
-  border: 0;
-  background: rgba(255,255,255,0.07);
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 1;
-}
-.modal-close:hover {
-  background: rgba(255,255,255,0.14);
-}
-.consult-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.field,
-.field-full {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.field-full {
-  grid-column: 1 / -1;
-}
-.consult-form label {
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.74);
-}
-.consult-form input,
-.consult-form select,
-.consult-form textarea {
-  width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 14px;
-  padding: 14px 16px;
-  font-size: 14px;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  outline: none;
-}
-.consult-form textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-.consult-form input:focus,
-.consult-form select:focus,
-.consult-form textarea:focus {
-  border-color: rgba(26,255,140,0.4);
-}
-.modal-note {
-  grid-column: 1 / -1;
-  font-size: 12px;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.38);
-}
-.modal-actions {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: flex-end;
-}
-.modal-submit {
-  border: 0;
-  cursor: pointer;
-}
-
 @media(max-width:768px){
   nav{padding:0 20px;}
   .nav-links{display:none;}
@@ -810,11 +687,7 @@ footer {
   .cta-form{flex-direction:column;align-items:center;}
   .process-inner{padding:72px 20px;}
   .consult-banner{flex-direction:column;margin:0 20px 72px;padding:36px 28px;}
-  .consult-form{grid-template-columns:1fr;}
-  .modal-card{padding:22px;}
-  .modal-title{font-size:24px;}
 }
-
 </style>
 </head>
 <body>
@@ -833,8 +706,8 @@ footer {
   </ul>
 
   <div class="nav-right">
-    <a href="#" class="nav-contact open-consultation-modal">Free Consultation</a>
-    <a href="#" class="nav-cta open-consultation-modal">Get Started</a>
+    <a href="#contact" class="nav-contact">Free Consultation</a>
+    <a href="#contact" class="nav-cta">Get Started</a>
   </div>
 </nav>
 
@@ -859,7 +732,7 @@ footer {
     </p>
 
     <div class="hero-btns">
-      <a href="#" class="btn-g open-consultation-modal">Book Free Consultation</a>
+      <a href="#contact" class="btn-g">Book Free Consultation</a>
       <a href="#services" class="btn-w">Our Services</a>
     </div>
 
@@ -902,17 +775,17 @@ footer {
     <div class="svc">
       <div class="svc-icon">🎓</div>
       <div class="svc-name">Internship Placement</div>
-      <p class="svc-desc">We connect bachelor's pursuing students with the right internship opportunities - matching your field, skills, and career goals.</p>
+      <p class="svc-desc">We connect bachelor's pursuing students with the right internship opportunities — matching your field, skills, and career goals.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">💼</div>
       <div class="svc-name">Job Placement</div>
-      <p class="svc-desc">From bachelor's graduates to PhD holders - we find the right job for every qualification and every ambition.</p>
+      <p class="svc-desc">From bachelor's graduates to PhD holders — we find the right job for every qualification and every ambition.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🔗</div>
       <div class="svc-name">LinkedIn Profile Update</div>
-      <p class="svc-desc">We professionally rewrite and optimize your LinkedIn profile so recruiters find you - and hire you faster.</p>
+      <p class="svc-desc">We professionally rewrite and optimize your LinkedIn profile so recruiters find you — and hire you faster.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🗺️</div>
@@ -922,12 +795,12 @@ footer {
     <div class="svc">
       <div class="svc-icon">📄</div>
       <div class="svc-name">Resume Building</div>
-      <p class="svc-desc">A professional resume that gets noticed - tailored for freshers, postgraduates, and experienced candidates alike.</p>
+      <p class="svc-desc">A professional resume that gets noticed — tailored for freshers, postgraduates, and experienced candidates alike.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🤝</div>
       <div class="svc-name">Free Consultation <span class="badge-free">Free</span></div>
-      <p class="svc-desc">Book a free one-on-one career consultation. No charges, no commitments - just honest guidance to move forward.</p>
+      <p class="svc-desc">Book a free one-on-one career consultation. No charges, no commitments — just honest guidance to move forward.</p>
     </div>
   </div>
 </div>
@@ -936,8 +809,8 @@ footer {
 <div class="consult-banner reveal">
   <div class="consult-left">
     <div class="consult-tag">100% Free · No Hidden Charges</div>
-    <h3>Not sure where to start?<br>Talk to us - it's free.</h3>
-    <p>Book a free 30-minute career consultation with our experts. We'll help you figure out the right path - whether you're a fresher, postgraduate, or PhD scholar.</p>
+    <h3>Not sure where to start?<br>Talk to us — it's free.</h3>
+    <p>Book a free 30-minute career consultation with our experts. We'll help you figure out the right path — whether you're a fresher, postgraduate, or PhD scholar.</p>
   </div>
   <a href="#contact" class="btn-g" style="white-space:nowrap;flex-shrink:0;">Book Free Call</a>
 </div>
@@ -953,7 +826,7 @@ footer {
       <div class="step reveal">
         <div class="step-n">01</div>
         <div class="step-name">Consult</div>
-        <p class="step-desc">Book your free consultation. Tell us your degree, interests, and goals - we listen carefully.</p>
+        <p class="step-desc">Book your free consultation. Tell us your degree, interests, and goals — we listen carefully.</p>
       </div>
       <div class="step reveal d1">
         <div class="step-n">02</div>
@@ -968,7 +841,7 @@ footer {
       <div class="step reveal d3">
         <div class="step-n">04</div>
         <div class="step-name">Place</div>
-        <p class="step-desc">We connect you to the right internship or job - and follow up until you're placed.</p>
+        <p class="step-desc">We connect you to the right internship or job — and follow up until you're placed.</p>
       </div>
     </div>
   </div>
@@ -1003,111 +876,11 @@ footer {
   <p class="cta-sub reveal">Free consultation. No commitment. Just the right guidance.</p>
   <div class="cta-form reveal">
     <input type="email" placeholder="Your email address" class="cta-inp"/>
-    <a href="#" class="btn-g open-consultation-modal">Book Free Consultation</a>
+    <a href="#" class="btn-g">Book Free Consultation</a>
   </div>
 </div>
 
 <!-- ━━━━ FOOTER ━━━━ -->
-
-<div class="modal-overlay" id="consultationModal" aria-hidden="true">
-  <div class="modal-card">
-    <div class="modal-top">
-      <div>
-        <div class="consult-tag">Free Consultation</div>
-        <h3 class="modal-title">Tell us what support you need</h3>
-        <p class="modal-sub">This form works on a static GitHub Pages site. Submissions go to spektrcareers@gmail.com through FormSubmit. The first live test requires email confirmation from that inbox.</p>
-      </div>
-      <button type="button" class="modal-close" id="closeConsultationModal" aria-label="Close">×</button>
-    </div>
-
-    <form class="consult-form" action="https://formsubmit.co/spektrcareers@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New SPEKTR Career Consultation Request">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://example.com/thanks">
-
-      <div class="field">
-        <label for="consult-name">Name *</label>
-        <input id="consult-name" type="text" name="Name" required>
-      </div>
-
-      <div class="field">
-        <label for="consult-email">Email *</label>
-        <input id="consult-email" type="email" name="Email" required>
-      </div>
-
-      <div class="field">
-        <label for="consult-phone">Phone Number</label>
-        <input id="consult-phone" type="tel" name="Phone Number">
-      </div>
-
-      <div class="field">
-        <label for="consult-education">Education *</label>
-        <input id="consult-education" type="text" name="Education" placeholder="B.Tech, MBA, MS, PhD" required>
-      </div>
-
-      <div class="field">
-        <label for="consult-job">Job *</label>
-        <input id="consult-job" type="text" name="Current Role or Target Job" placeholder="Data Analyst, Software Engineer" required>
-      </div>
-
-      <div class="field">
-        <label for="consult-help">What help are you looking for? *</label>
-        <select id="consult-help" name="Help Needed" required>
-          <option value="" selected disabled>Select one</option>
-          <option>Resume Support</option>
-          <option>LinkedIn Profile Update</option>
-          <option>Internship Search</option>
-          <option>Job Search Support</option>
-          <option>Interview Preparation</option>
-          <option>Career Guidance</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="field-full">
-        <label for="consult-details">Additional Details</label>
-        <textarea id="consult-details" name="Additional Details" placeholder="Write briefly about your background and what exactly you need."></textarea>
-      </div>
-
-      <p class="modal-note">Required fields are name, email, education, job, and help needed.</p>
-
-      <div class="modal-actions">
-        <button type="submit" class="btn-g modal-submit">Submit Request</button>
-      </div>
-    
-<!-- TYPE SELECTION -->
-<div style="margin-top:10px;">
-  <label>Choose an option</label><br>
-  <select id="userType" name="userType" required onchange="toggleFields()">
-    <option value="">Select</option>
-    <option value="student">Student</option>
-    <option value="working">Working</option>
-  </select>
-</div>
-
-<div id="studentField" style="display:none;margin-top:10px;">
-  <label>Education</label><br>
-  <input type="text" name="education" placeholder="Your education">
-</div>
-
-<div id="workingField" style="display:none;margin-top:10px;">
-  <label>Job Title</label><br>
-  <input type="text" name="job" placeholder="Your job title">
-</div>
-
-<script>
-function toggleFields(){
-  var type = document.getElementById("userType").value;
-  document.getElementById("studentField").style.display = type==="student" ? "block" : "none";
-  document.getElementById("workingField").style.display = type==="working" ? "block" : "none";
-}
-</script>
-
-</form>
-  </div>
-</div>
-
 <footer>
   <div class="footer-top">
     <div>
@@ -1116,7 +889,7 @@ function toggleFields(){
         <span class="f-logo-name">SPEKTR</span>
       </div>
       <div class="f-sub">Career Matrix</div>
-      <p class="f-desc">Connecting students and graduates to the right roles - with free career guidance, LinkedIn updates, and internship placements.</p>
+      <p class="f-desc">Connecting students and graduates to the right roles — with free career guidance, LinkedIn updates, and internship placements.</p>
     </div>
     <div class="f-col">
       <h5>Services</h5>
@@ -1160,47 +933,6 @@ function toggleFields(){
 
 <!-- ━━━━ CANVAS + REVEAL ━━━━ -->
 <script>
-
-// Consultation modal
-const consultationModal = document.getElementById('consultationModal');
-const openConsultationButtons = document.querySelectorAll('.open-consultation-modal');
-const closeConsultationButton = document.getElementById('closeConsultationModal');
-const consultationForm = consultationModal.querySelector('form');
-const nextField = consultationForm.querySelector('input[name="_next"]');
-nextField.value = `${window.location.origin}${window.location.pathname}?consultation=success`;
-
-function openConsultationModal() {
-  consultationModal.classList.add('open');
-  consultationModal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeConsultationModal() {
-  consultationModal.classList.remove('open');
-  consultationModal.setAttribute('aria-hidden', 'true');
-  document.body.style.overflow = '';
-}
-
-openConsultationButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    openConsultationModal();
-  });
-});
-
-closeConsultationButton.addEventListener('click', closeConsultationModal);
-consultationModal.addEventListener('click', (event) => {
-  if (event.target === consultationModal) closeConsultationModal();
-});
-window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && consultationModal.classList.contains('open')) closeConsultationModal();
-});
-
-if (new URLSearchParams(window.location.search).get('consultation') === 'success') {
-  alert('Consultation request submitted successfully. Check spektrcareers@gmail.com to confirm FormSubmit on the first live submission.');
-  window.history.replaceState({}, document.title, window.location.pathname);
-}
-
 // Canvas animation
 const canvas = document.getElementById('heroCanvas');
 const ctx = canvas.getContext('2d');
