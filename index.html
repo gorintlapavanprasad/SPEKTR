@@ -902,17 +902,17 @@ footer {
     <div class="svc">
       <div class="svc-icon">🎓</div>
       <div class="svc-name">Internship Placement</div>
-      <p class="svc-desc">We connect bachelor's pursuing students with the right internship opportunities — matching your field, skills, and career goals.</p>
+      <p class="svc-desc">We connect bachelor's pursuing students with the right internship opportunities - matching your field, skills, and career goals.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">💼</div>
       <div class="svc-name">Job Placement</div>
-      <p class="svc-desc">From bachelor's graduates to PhD holders — we find the right job for every qualification and every ambition.</p>
+      <p class="svc-desc">From bachelor's graduates to PhD holders - we find the right job for every qualification and every ambition.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🔗</div>
       <div class="svc-name">LinkedIn Profile Update</div>
-      <p class="svc-desc">We professionally rewrite and optimize your LinkedIn profile so recruiters find you — and hire you faster.</p>
+      <p class="svc-desc">We professionally rewrite and optimize your LinkedIn profile so recruiters find you - and hire you faster.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🗺️</div>
@@ -922,12 +922,12 @@ footer {
     <div class="svc">
       <div class="svc-icon">📄</div>
       <div class="svc-name">Resume Building</div>
-      <p class="svc-desc">A professional resume that gets noticed — tailored for freshers, postgraduates, and experienced candidates alike.</p>
+      <p class="svc-desc">A professional resume that gets noticed - tailored for freshers, postgraduates, and experienced candidates alike.</p>
     </div>
     <div class="svc">
       <div class="svc-icon">🤝</div>
       <div class="svc-name">Free Consultation <span class="badge-free">Free</span></div>
-      <p class="svc-desc">Book a free one-on-one career consultation. No charges, no commitments — just honest guidance to move forward.</p>
+      <p class="svc-desc">Book a free one-on-one career consultation. No charges, no commitments - just honest guidance to move forward.</p>
     </div>
   </div>
 </div>
@@ -936,8 +936,8 @@ footer {
 <div class="consult-banner reveal">
   <div class="consult-left">
     <div class="consult-tag">100% Free · No Hidden Charges</div>
-    <h3>Not sure where to start?<br>Talk to us — it's free.</h3>
-    <p>Book a free 30-minute career consultation with our experts. We'll help you figure out the right path — whether you're a fresher, postgraduate, or PhD scholar.</p>
+    <h3>Not sure where to start?<br>Talk to us - it's free.</h3>
+    <p>Book a free 30-minute career consultation with our experts. We'll help you figure out the right path - whether you're a fresher, postgraduate, or PhD scholar.</p>
   </div>
   <a href="#contact" class="btn-g" style="white-space:nowrap;flex-shrink:0;">Book Free Call</a>
 </div>
@@ -953,7 +953,7 @@ footer {
       <div class="step reveal">
         <div class="step-n">01</div>
         <div class="step-name">Consult</div>
-        <p class="step-desc">Book your free consultation. Tell us your degree, interests, and goals — we listen carefully.</p>
+        <p class="step-desc">Book your free consultation. Tell us your degree, interests, and goals - we listen carefully.</p>
       </div>
       <div class="step reveal d1">
         <div class="step-n">02</div>
@@ -968,7 +968,7 @@ footer {
       <div class="step reveal d3">
         <div class="step-n">04</div>
         <div class="step-name">Place</div>
-        <p class="step-desc">We connect you to the right internship or job — and follow up until you're placed.</p>
+        <p class="step-desc">We connect you to the right internship or job - and follow up until you're placed.</p>
       </div>
     </div>
   </div>
@@ -1075,7 +1075,36 @@ footer {
       <div class="modal-actions">
         <button type="submit" class="btn-g modal-submit">Submit Request</button>
       </div>
-    </form>
+    
+<!-- TYPE SELECTION -->
+<div style="margin-top:10px;">
+  <label>Choose an option</label><br>
+  <select id="userType" name="userType" required onchange="toggleFields()">
+    <option value="">Select</option>
+    <option value="student">Student</option>
+    <option value="working">Working</option>
+  </select>
+</div>
+
+<div id="studentField" style="display:none;margin-top:10px;">
+  <label>Education</label><br>
+  <input type="text" name="education" placeholder="Your education">
+</div>
+
+<div id="workingField" style="display:none;margin-top:10px;">
+  <label>Job Title</label><br>
+  <input type="text" name="job" placeholder="Your job title">
+</div>
+
+<script>
+function toggleFields(){
+  var type = document.getElementById("userType").value;
+  document.getElementById("studentField").style.display = type==="student" ? "block" : "none";
+  document.getElementById("workingField").style.display = type==="working" ? "block" : "none";
+}
+</script>
+
+</form>
   </div>
 </div>
 
@@ -1087,7 +1116,7 @@ footer {
         <span class="f-logo-name">SPEKTR</span>
       </div>
       <div class="f-sub">Career Matrix</div>
-      <p class="f-desc">Connecting students and graduates to the right roles — with free career guidance, LinkedIn updates, and internship placements.</p>
+      <p class="f-desc">Connecting students and graduates to the right roles - with free career guidance, LinkedIn updates, and internship placements.</p>
     </div>
     <div class="f-col">
       <h5>Services</h5>
