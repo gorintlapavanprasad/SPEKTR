@@ -214,10 +214,13 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
   .form-grid{grid-template-columns:1fr;}
   .consult-banner{flex-direction:column;text-align:center;padding:36px 28px;}
   .consult-banner p{margin:0 auto;}
+  #about .wrap > .reveal:last-child{grid-template-columns:1fr !important;}
+  #people .reveal:last-child{grid-template-columns:1fr 1fr !important;}
 }
 @media(max-width:520px){
   .steps{grid-template-columns:1fr;}
   .hero-title{font-size:clamp(40px,12vw,60px);}
+  #people .reveal:last-child{grid-template-columns:1fr !important;}
 }
 </style>
 </head>
@@ -239,10 +242,12 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
     <li><a href="#services">Services</a></li>
     <li><a href="#process">How It Works</a></li>
     <li><a href="#who">Who We Help</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#people">Team</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="mailto:spektrcareers@gmail.com" class="nav-contact">spektrcareers@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#512221343a25233230233434232211363c30383d7f323e3c" class="nav-contact"><span class="__cf_email__" data-cfemail="710201141a05031210031414030231161c10181d5f121e1c">[email&#160;protected]</span></a>
     <a href="#contact" class="nav-cta">Free Consultation</a>
   </div>
   <button class="ham" onclick="toggleMenu()" aria-label="Toggle menu">
@@ -254,7 +259,9 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
   <a href="#services" onclick="closeMenu()">Services</a>
   <a href="#process" onclick="closeMenu()">How It Works</a>
   <a href="#who" onclick="closeMenu()">Who We Help</a>
-  <a href="mailto:spektrcareers@gmail.com" onclick="closeMenu()">spektrcareers@gmail.com</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#people" onclick="closeMenu()">Team</a>
+  <a href="/cdn-cgi/l/email-protection#e79497828c939584869582829594a7808a868e8bc984888a" onclick="closeMenu()"><span class="__cf_email__" data-cfemail="443734212f303627253621213637042329252d286a272b29">[email&#160;protected]</span></a>
   <a href="#contact" onclick="closeMenu()" class="mob-cta-link">Free Consultation</a>
 </div>
 
@@ -453,6 +460,82 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about" style="background:var(--card2);border-top:1px solid var(--br);border-bottom:1px solid var(--br);">
+  <div class="wrap">
+    <div class="reveal tc" style="margin-bottom:52px;">
+      <div class="sec-tag">About Us</div>
+      <h2 class="sec-h">Why SPEKTR exists.</h2>
+    </div>
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;">
+      <div>
+        <p style="font-size:16px;color:rgba(238,241,255,.85);line-height:1.9;font-weight:400;margin-bottom:22px;">Every year, thousands of students graduate across India with real skills, real ambition, and no idea where to go next. Career guidance exists, but it is expensive, generic, and built for people who already have connections. SPEKTR Career Matrix was founded to change that.</p>
+        <p style="font-size:16px;color:rgba(238,241,255,.85);line-height:1.9;font-weight:400;margin-bottom:22px;">We are a career placement and guidance company headquartered in Chittoor, Andhra Pradesh. From the very first conversation, everything we offer is completely free. No consultation fees, no placement commissions, no hidden charges. Just honest, personalised guidance from people who genuinely care about where you end up.</p>
+        <p style="font-size:16px;color:rgba(238,241,255,.85);line-height:1.9;font-weight:400;">We work with students and graduates at every level, from those pursuing their bachelor&rsquo;s degree to PhD scholars, helping them land the right internships, jobs, and career paths through resume building, LinkedIn optimisation, and direct placement support. Our belief is simple: the right opportunity should not depend on who you know or how much you can pay.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div style="background:var(--card);border:1px solid var(--br);border-left:3px solid var(--g);border-radius:14px;padding:28px 28px;">
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:38px;background:linear-gradient(135deg,var(--g),var(--b));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px;">100%</div>
+          <div style="font-size:13px;color:rgba(238,241,255,.65);">Free for every student. No charges, ever.</div>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--br);border-left:3px solid var(--b);border-radius:14px;padding:28px 28px;">
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:38px;background:linear-gradient(135deg,var(--b),var(--g));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px;">100+</div>
+          <div style="font-size:13px;color:rgba(238,241,255,.65);">Students placed across India so far.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section id="people">
+  <div class="wrap">
+    <div class="reveal tc" style="margin-bottom:56px;">
+      <div class="sec-tag">Our Team</div>
+      <h2 class="sec-h">The people behind<br><span>SPEKTR.</span></h2>
+    </div>
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+
+      <!-- CEO -->
+      <div style="background:var(--card);border:1px solid var(--br);border-radius:18px;padding:32px 24px;text-align:center;position:relative;overflow:hidden;transition:transform .25s,border-color .25s;" onmouseenter="this.style.transform='translateY(-4px)';this.style.borderColor='rgba(26,255,140,.25)'" onmouseleave="this.style.transform='';this.style.borderColor='var(--br)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),var(--b));"></div>
+        <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(26,255,140,.15),rgba(26,140,255,.15));border:2px solid rgba(26,255,140,.25);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:#fff;">PG</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px;">Pavan Prasad Gorintla</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--g);margin-bottom:16px;">Founder &amp; CEO</div>
+        <p style="font-size:12.5px;color:rgba(238,241,255,.65);line-height:1.75;">The founder and driving force behind SPEKTR. Pavan sets the vision, leads business development, and oversees all products and partnerships. He represents SPEKTR publicly and ensures the company stays true to its mission of free, accessible career guidance for every student.</p>
+      </div>
+
+      <!-- MD -->
+      <div style="background:var(--card);border:1px solid var(--br);border-radius:18px;padding:32px 24px;text-align:center;position:relative;overflow:hidden;transition:transform .25s,border-color .25s;" onmouseenter="this.style.transform='translateY(-4px)';this.style.borderColor='rgba(26,255,140,.25)'" onmouseleave="this.style.transform='';this.style.borderColor='var(--br)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--b),var(--g));"></div>
+        <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(26,140,255,.15),rgba(26,255,140,.15));border:2px solid rgba(26,140,255,.25);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:#fff;">SG</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px;">Sethu Prasad Gorantla</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--b);margin-bottom:16px;">Managing Director</div>
+        <p style="font-size:12.5px;color:rgba(238,241,255,.65);line-height:1.75;">Co-leads SPEKTR as an equal partner alongside the CEO. Sethu owns day-to-day operations, manages student and college relationships, and drives ground-level execution. Where Pavan drives the vision, Sethu ensures it becomes reality every single day.</p>
+      </div>
+
+      <!-- CHAIRMAN -->
+      <div style="background:var(--card);border:1px solid var(--br);border-radius:18px;padding:32px 24px;text-align:center;position:relative;overflow:hidden;transition:transform .25s,border-color .25s;" onmouseenter="this.style.transform='translateY(-4px)';this.style.borderColor='rgba(26,255,140,.25)'" onmouseleave="this.style.transform='';this.style.borderColor='var(--br)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),var(--b));"></div>
+        <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(26,255,140,.12),rgba(26,140,255,.12));border:2px solid rgba(26,255,140,.2);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:#fff;">CH</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px;">Chairman</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--g);margin-bottom:16px;">Chairman</div>
+        <p style="font-size:12.5px;color:rgba(238,241,255,.65);line-height:1.75;">Provides strategic oversight and long-term governance for SPEKTR. Guides the leadership team with senior-level counsel, ensures the company stays aligned with its founding values, and supports key decisions at the highest level.</p>
+      </div>
+
+      <!-- CTO -->
+      <div style="background:var(--card);border:1px solid var(--br);border-radius:18px;padding:32px 24px;text-align:center;position:relative;overflow:hidden;transition:transform .25s,border-color .25s;" onmouseenter="this.style.transform='translateY(-4px)';this.style.borderColor='rgba(26,255,140,.25)'" onmouseleave="this.style.transform='';this.style.borderColor='var(--br)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--b),var(--g));"></div>
+        <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(26,140,255,.15),rgba(26,255,140,.15));border:2px solid rgba(26,140,255,.25);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:#fff;">UA</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px;">Uday Aravind</div>
+        <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--b);margin-bottom:16px;">Chief Technology Officer</div>
+        <p style="font-size:12.5px;color:rgba(238,241,255,.65);line-height:1.75;">Leads all technology and product development at SPEKTR. Uday builds and maintains every digital platform the company runs on, from the website and NexusFind to internal tools. His work ensures the team operates efficiently and every student-facing product is fast, polished, and genuinely useful.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- CTA + FORM -->
 <div class="cta-section" id="contact">
   <div class="wrap tc">
@@ -528,13 +611,13 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
         </button>
         <p class="form-note">
           We reply within 24 hours &middot; 
-          <a href="mailto:spektrcareers@gmail.com">spektrcareers@gmail.com</a>
+          <a href="/cdn-cgi/l/email-protection#b8cbc8ddd3cccadbd9caddddcacbf8dfd5d9d1d496dbd7d5"><span class="__cf_email__" data-cfemail="fa898a9f918e88999b889f9f8889ba9d979b9396d4999597">[email&#160;protected]</span></a>
         </p>
       </form>
       <div class="form-success" id="formSuccess">
         <div class="fs-icon">&#127881;</div>
         <h3>Consultation Booked!</h3>
-        <p>Thank you! We&rsquo;ve received your details and will reach out within 24 hours.<br><br>Meanwhile feel free to email us directly at<br><a href="mailto:spektrcareers@gmail.com" style="color:var(--g)">spektrcareers@gmail.com</a></p>
+        <p>Thank you! We&rsquo;ve received your details and will reach out within 24 hours.<br><br>Meanwhile feel free to email us directly at<br><a href="/cdn-cgi/l/email-protection#601310050b14120301120505121320070d01090c4e030f0d" style="color:var(--g)"><span class="__cf_email__" data-cfemail="037073666877716062716666717043646e626a6f2d606c6e">[email&#160;protected]</span></a></p>
       </div>
     </div>
   </div>
@@ -574,7 +657,7 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
     <div class="f-col">
       <h5>Contact</h5>
       <ul>
-        <li><a href="mailto:spektrcareers@gmail.com">spektrcareers@gmail.com</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#6d1e1d0806191f0e0c1f08081f1e2d0a000c0401430e0200"><span class="__cf_email__" data-cfemail="d3a0a3b6b8a7a1b0b2a1b6b6a1a093b4beb2babffdb0bcbe">[email&#160;protected]</span></a></li>
         <li><a href="#contact">Book Free Call</a></li>
         <li><a href="https://linkedin.com/company/spektr-career-matrix" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="#contact">Privacy Policy</a></li>
@@ -588,12 +671,12 @@ footer{background:#020408;border-top:1px solid var(--br);padding:64px 44px 36px;
       <a href="#contact">Privacy</a>
       <a href="#contact">Terms</a>
       <a href="https://linkedin.com/company/spektr-career-matrix" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:spektrcareers@gmail.com">Email</a>
+      <a href="/cdn-cgi/l/email-protection#037073666877716062716666717043646e626a6f2d606c6e">Email</a>
     </div>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ─── CUSTOM CURSOR ─── */
 const cur = document.getElementById('cursor');
 const trail = document.getElementById('cursor-trail');
@@ -767,34 +850,4 @@ document.getElementById('consultForm').addEventListener('submit', async function
       'Name: '          + n,
       'Email: '         + em,
       'Phone: '         + ph,
-      'Qualification: ' + q,
-      'Situation: '     + si,
-      'Best Time: '     + ti,
-      'Message: '       + msg
-    ].join('%0A');
-
-    window.location.href = `mailto:spektrcareers@gmail.com?subject=New SPEKTR Consultation - ${encodeURIComponent(n)}&body=${body}`;
-    showSuccess();
-  }
-});
-
-function showSuccess(){
-  document.getElementById('consultForm').style.display = 'none';
-  const successEl = document.getElementById('formSuccess');
-  successEl.style.display = 'block';
-  successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-
-function btnErr(btn, originalHTML){
-  btn.disabled = false;
-  btn.style.background = '#cc2222';
-  btn.innerHTML = '&#9888; Something went wrong &mdash; try again';
-  setTimeout(() => {
-    btn.innerHTML = originalHTML;
-    btn.style.background = '';
-    btn.disabled = false;
-  }, 3500);
-}
-</script>
-</body>
-</html>
+    
